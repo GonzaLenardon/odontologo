@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+}
+
+/* COLORES */
+.dark {
+  background-color: #36414e;
+}
+.transparentdark {
+  background-color: rgba(54, 65, 78, 0.562) !important;
+}
+
+/* VALORES REUSABLES */
+.defaultborders {
+  border-radius: 8px !important;
+}
+.alturafull {
+  height: calc(100vh - 20px); /* 100% altura - tamaño del header */
+  overflow-y: hidden;
+}
+
+/* LOGIN */
+.background {
+  background-image: linear-gradient(
+      rgba(104, 110, 128, 0.568),
+      rgba(97, 94, 94, 0.075)
+    ),
+    url(./assets/consultorio.jpg);
+  display: flex;
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.background::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  backdrop-filter: blur(15px);
+}
+
+.login-form {
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(169, 188, 212, 0.5);
+  padding: 40px;
+}
+
+.version {
+  position: absolute;
+  color: white;
+  right: 3em;
+  font-size: 0.8em;
+  bottom: 2px;
+}
+
+/* CONTENEDORES */
+.ccontainer {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  background-color: rgba(169, 188, 212, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.ccontainer-noblur {
+  padding: 20px;
+  background-color: rgba(169, 188, 212, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  border-radius: 8px;
+}
+
+.citem {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+  background-color: rgb(185, 197, 211);
+
+  height: 50px;
+  padding-inline: 8px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* HOME */
+.home {
+  display: flex;
+}
+
+/* Table */
+
+.headerTable {
+  background-color: #36414e;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  padding: 12px;
+}
+.separator {
+  text-align: center;
+  font-size: 0.875rem; /* Tamaño de texto pequeño */
+  color: rgb(39, 8, 8);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
