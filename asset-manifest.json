@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/odontologo/static/css/main.7dbbf3fa.css",
-    "main.js": "/odontologo/static/js/main.2b979990.js",
+    "main.css": "/odontologo/static/css/main.06425084.css",
+    "main.js": "/odontologo/static/js/main.7b4a5344.js",
     "static/media/panoramica5.jpg": "/odontologo/static/media/panoramica5.ede418fea7f29c8ef0db.jpg",
     "static/media/odontograma.png": "/odontologo/static/media/odontograma.186e3ae35c8f13aa1176.png",
     "static/media/consultorio.jpg": "/odontologo/static/media/consultorio.65347bf4afc5f5d05aca.jpg",
@@ -10,11 +10,11 @@
     "static/media/face.avif": "/odontologo/static/media/face.cd1b0e4500a1f00cfd14.avif",
     "static/media/face5.avif": "/odontologo/static/media/face5.ca006eaad9542ac02987.avif",
     "index.html": "/odontologo/index.html",
-    "main.7dbbf3fa.css.map": "/odontologo/static/css/main.7dbbf3fa.css.map",
-    "main.2b979990.js.map": "/odontologo/static/js/main.2b979990.js.map"
+    "main.06425084.css.map": "/odontologo/static/css/main.06425084.css.map",
+    "main.7b4a5344.js.map": "/odontologo/static/js/main.7b4a5344.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dbbf3fa.css",
-    "static/js/main.2b979990.js"
+    "static/css/main.06425084.css",
+    "static/js/main.7b4a5344.js"
   ]
 }
