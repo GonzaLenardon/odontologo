@@ -1,1 +1,1 @@
-if (process.env.NODE_ENV === 'production') console.log = function () {};
+if (import.meta.env.PROD) console.log = function () {};

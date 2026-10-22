@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Odontológico",
+  "name": "Sistema de Gestión Odontológica",
+  "description": "Gestión integral de pacientes, agenda, historias clínicas y presupuestos",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#36414e",
+  "background_color": "#f8fafc"
 }
