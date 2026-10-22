@@ -31,31 +31,71 @@ const menuSections = [
   {
     label: 'Principal',
     items: [
-      { title: 'Panel', path: '/dashboard', icon: <DashboardIcon fontSize="small" /> },
-      { title: 'Pacientes', path: '/pacientes', icon: <PeopleIcon fontSize="small" /> },
-      { title: 'Agenda', path: '/agenda', icon: <CalendarIcon fontSize="small" /> },
-      { title: 'Odontograma', path: '/odontograma', icon: <MedicalIcon fontSize="small" /> },
-      { title: 'Recordatorios', path: '/recordatorios', icon: <NotificationsIcon fontSize="small" /> },
+      {
+        title: 'Panel',
+        path: '/dashboard',
+        icon: <DashboardIcon fontSize="small" />,
+      },
+      {
+        title: 'Pacientes',
+        path: '/pacientes',
+        icon: <PeopleIcon fontSize="small" />,
+      },
+      {
+        title: 'Agenda',
+        path: '/agenda',
+        icon: <CalendarIcon fontSize="small" />,
+      },
+      {
+        title: 'Odontograma',
+        path: '/odontograma',
+        icon: <MedicalIcon fontSize="small" />,
+      },
+      {
+        title: 'Recordatorios',
+        path: '/recordatorios',
+        icon: <NotificationsIcon fontSize="small" />,
+      },
     ],
   },
   {
     label: 'Clínico',
     items: [
-      { title: 'Obras Sociales', path: '/obras-sociales', icon: <ReceiptIcon fontSize="small" /> },
-      { title: 'Odontólogos', path: '/odontologos', icon: <HospitalIcon fontSize="small" /> },
-      { title: 'Proveedores', path: '/proveedores', icon: <BusinessIcon fontSize="small" /> },
+      {
+        title: 'Obras Sociales',
+        path: '/obras-sociales',
+        icon: <ReceiptIcon fontSize="small" />,
+      },
+      {
+        title: 'Odontólogos',
+        path: '/odontologos',
+        icon: <HospitalIcon fontSize="small" />,
+      },
+      {
+        title: 'Proveedores',
+        path: '/proveedores',
+        icon: <BusinessIcon fontSize="small" />,
+      },
     ],
   },
   {
     label: 'Financiero',
     items: [
-      { title: 'Presupuesto y Pagos', path: '/presupuestos', icon: <PaymentsIcon fontSize="small" /> },
+      {
+        title: 'Presupuesto y Pagos',
+        path: '/presupuestos',
+        icon: <PaymentsIcon fontSize="small" />,
+      },
     ],
   },
   {
     label: 'Portal Paciente',
     items: [
-      { title: 'Reservar Turno', path: '/portal', icon: <WebIcon fontSize="small" /> },
+      {
+        title: 'Reservar Turno',
+        path: '/portal',
+        icon: <WebIcon fontSize="small" />,
+      },
     ],
   },
 ];
@@ -99,14 +139,20 @@ export default function Home() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-dental to-dental-dark flex items-center justify-center">
                 <span className="text-white font-bold text-sm">O</span>
               </div>
-              <span className="font-semibold text-gray-800 text-sm">Odontológico</span>
+              <span className="font-semibold text-gray-800 text-sm">
+                Odontológico{' '}
+              </span>
             </div>
           )}
           <button
             onClick={() => setCollapsed(!collapsed)}
             className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500 transition-colors"
           >
-            {collapsed ? <ChevronRightIcon fontSize="small" /> : <ChevronLeftIcon fontSize="small" />}
+            {collapsed ? (
+              <ChevronRightIcon fontSize="small" />
+            ) : (
+              <ChevronLeftIcon fontSize="small" />
+            )}
           </button>
         </div>
 
@@ -118,8 +164,10 @@ export default function Home() {
                 <PersonSearchIcon fontSize="small" className="text-dental" />
               </div>
               <div>
-                <p className="text-xs text-gray-500">Bienvenido</p>
-                <p className="text-sm font-medium text-gray-800 truncate max-w-[160px]">{paciente}</p>
+                <p className="text-xs text-gray-500">Bienvenido </p>
+                <p className="text-sm font-medium text-gray-800 truncate max-w-[160px]">
+                  {paciente}
+                </p>
               </div>
             </div>
           </div>
@@ -147,7 +195,9 @@ export default function Home() {
                     }`}
                     title={collapsed ? item.title : undefined}
                   >
-                    <span className={isActive ? 'text-dental' : 'text-gray-400'}>
+                    <span
+                      className={isActive ? 'text-dental' : 'text-gray-400'}
+                    >
                       {item.icon}
                     </span>
                     {!collapsed && <span>{item.title}</span>}
@@ -164,7 +214,9 @@ export default function Home() {
         {/* Sidebar footer */}
         {!collapsed && (
           <div className="px-4 py-3 border-t border-gray-100">
-            <p className="text-[10px] text-gray-400 text-center">v3.0.0 — Demo</p>
+            <p className="text-[10px] text-gray-400 text-center">
+              v3.0.0 — Demo
+            </p>
           </div>
         )}
       </aside>
